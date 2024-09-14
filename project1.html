@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  <header>
+    <div class="container">
+      <h1>Employee Management System</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview" class="container">
+    <h2>Overview</h2>
+    <p>This project is an Employee Management System built with Java Spring Boot and Thymeleaf. It allows you to manage employee data, including adding new employees, viewing a list of employees, and deleting employee information.</p>
+    <p>* If you want to update an employee's information, you can delete the existing information and adding back or you can update from database.</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="container">
+    <h2>Features</h2>
+    <ul>
+      <li><strong>View Employees:</strong> Display a list of employees.</li>
+      <li><strong>Add Employee:</strong> Form to add new employee details.</li>
+      <li><strong>Delete Employee:</strong> Functionality to delete existing employee details.</li>
+    </ul>
+  </section>
+
+  <!-- Technologies Section -->
+  <section id="technologies" class="container">
+    <h2>Technologies Used</h2>
+    <ul>
+      <li><strong>Java:</strong> Programming language used for the backend.</li>
+      <li><strong>Spring Boot:</strong> Framework for building the backend.</li>
+      <li><strong>Thymeleaf:</strong> Template engine for rendering HTML views.</li>
+      <li><strong>MySQL:</strong> Database for storing employee data.</li>
+      <li><strong>Bootstrap:</strong> CSS framework for styling the web pages.</li>
+    </ul>
+  </section>
+
+  <!-- Setup Instructions Section -->
+  <section id="setup" class="container">
+    <h2>Setup Instructions</h2>
+
+    <h3>Prerequisites</h3>
+    <ul>
+      <li>Java Development Kit (JDK) 11 or later</li>
+      <li>Maven: For dependency management and building the project</li>
+      <li>MySQL Database: Ensure MySQL server is running and you have created a database</li>
+    </ul>
+
+    <h3>Steps to Run the Project</h3>
+    <ol>
+      <li><strong>Clone the Repository:</strong></li>
+      <code>git clone https://github.com/yourusername/EmployeeManagementSystem.git</code>
+
+      <li><strong>Navigate to the Project Directory:</strong></li>
+      <code>cd EmployeeManagementSystem</code>
+
+      <li><strong>Update application.properties:</strong> Edit <code>src/main/resources/application.properties</code> to match your MySQL setup:</li>
+      <pre><code>spring.datasource.url=jdbc:mysql://localhost:3306/employee_db
+spring.datasource.username=root
+spring.datasource.password=password
+spring.jpa.hibernate.ddl-auto=update
+</code></pre>
+
+      <li><strong>Build the Project:</strong> Use Maven to build the project:</li>
+      <code>mvn clean install</code>
+
+      <li><strong>Run the Application:</strong> Start the Spring Boot application:</li>
+      <code>mvn spring-boot:run</code>
+
+      <li><strong>Access the Application:</strong> Open your web browser and go to <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> to see the Employee Management System.</li>
+    </ol>
+  </section>
+
+  <!-- Directory Structure Section -->
+  <section id="directory-structure" class="container">
+    <h2>Directory Structure</h2>
+    <pre><code>
+src
+└── main
+    ├── java
+    │   └── com.example.demo
+    │       ├── controller
+    │       │   └── EmployeeController.java
+    │       ├── entity
+    │       │   └── Employee.java
+    │       ├── repository
+    │       │   └── EmployeeRepository.java
+    │       └── DemoApplication.java
+    └── resources
+        ├── application.properties
+        └── templates
+            └── index.html
+    </code></pre>
+  </section>
+
+  <!-- Known Issues Section -->
+  <section id="known-issues" class="container">
+    <h2>Known Issues</h2>
+    <p><strong>Port Conflict:</strong> If the application fails to start due to port conflicts, ensure no other applications are using port 8080 or change the port in application.properties.</p>
+  </section>
+
+  <!-- Contributing Section -->
+  <section id="contributing" class="container">
+    <h2>Contributing</h2>
+    <p>If you would like to contribute to this project, please fork the repository and create a pull request with your changes.</p>
+  </section>
+
+  <!-- License Section -->
+  <section id="license" class="container">
+    <h2>License</h2>
+    <p>This project is licensed under the MIT License.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>For any questions or support, please contact <strong>Banyar Nyi</strong> at <a href="mailto:banyarnyi1605@gmail.com">banyarnyi1605@gmail.com</a>.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Banyar Nyi</p>
+    </div>
+  </footer>
+
+</body>
+</html>

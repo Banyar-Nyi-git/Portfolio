@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Banyar Nyi Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="library/fontawesome/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="profile">
+        <table>
+        	<tr>
+        		<td style="padding-right: 20px;" rowspan="2"><img src="images/profile.jpg" width="100px" height="130px"></td>
+        		<td><h1>Banyar Nyi</h1></td>
+        	</tr>
+         	<tr>
+         		<td><p>Java Developer | Web Developer</p></td>
+         	</tr>
+          
+          </table>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Nice to meet you! My name is Banyar Nyi. I'm a 22-year-old developer from Myanmar. I specialize in Java and web development with 5 years of experience. I speak Japanese at N2 level and have FE and Nat-Test 3Q certifications. I'm passionate about coding and always eager to learn more.</p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3><a style="color: black;" href="project1.html">Employee Management System</a></h3>
+          <img src="images/project1.png" alt="Employee Management System" width="200" height="180">
+          <p>This web application allows for comprehensive management of employee data. Users can add, view, update, and delete employee records through an intuitive interface. Built with Java Spring Boot and Thymeleaf, it leverages MySQL for database management and offers a clean, user-friendly experience for handling employee information.</p>
+          <p><strong>Technologies Used:</strong> Java, Spring Boot, Thymeleaf, MySQL</p>
+          <a href="https://github.com/yourusername/employee-information" class="btn" target="_blank">View on GitHub</a>
+          <a style="margin-top: 5px;" href="#" class="btn">View Live Demo</a>
+        </div>
+
+        <!-- Project 2 -->
+       <div class="project-card">
+          <h3><a style="color: black;" href="project2.html">Employee Management System</a></h3>
+          <img src="images/project2.png" alt="Employee Infomation" width="200" height="180">
+          <p>A dynamic web application designed to manage employee information. It features functionalities for viewing, adding, and updating employee details. The project utilizes HTML, CSS, JavaScript for front-end development, PHP for server-side operations, and MySQL for data storage. It offers a responsive design and interactive features for a seamless user experience.</p>
+          <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+          <a href="https://github.com/yourusername/employee-information" class="btn" target="_blank">View on GitHub</a>
+          <a style="margin-top: 5px;" href="#" class="btn">View Live Demo</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>( Next Projects )</h3>
+          <p>Upcoming ...</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Java (90%)</li>
+        <li>Spring Boot (60%)</li>
+        <li>Thymeleaf (30%)</li>
+        <li>C (60%)</li>
+        <li>HTML/CSS/JavaScript (90%)</li>
+        <li>PHP (70%)</li>
+        <li>MySQL (90%)</li>
+        <li>Git (50%)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/xldrkndv" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Banyar Nyi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
